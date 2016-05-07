@@ -10,7 +10,6 @@ Also see neural2d.h for more information.
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <iterator>
 #include "neural2d.h"
 
 namespace NNet {
