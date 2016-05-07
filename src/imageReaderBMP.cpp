@@ -15,7 +15,8 @@ namespace NNet {
 //
 xySize ImageReaderBMP::getData(std::string const &filename, std::vector<float> &dataContainer, ColorChannel_t colorChannel)
 {
-    FILE* f = fopen(filename.c_str(), "rb");
+	FILE* f;
+	fopen_s(&f, filename.c_str(), "rb");
 
     if (f == NULL) {
         return { 0, 0 };
